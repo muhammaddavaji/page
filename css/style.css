@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  background: #a3a3a3;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  position: relative;
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+  opacity: 0;
+  animation: slideright 1s ease forwards;
+}
+.navbar a {
+  position: relative;
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0.3s;
+  opacity: 0;
+  animation: slideTop 0.7s ease forwards;
+}
+.navbar a:hover {
+  color: #0ef;
+}
+.project{
+  color: rgb(33, 229, 243);
+}
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #081c29;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 70px 10% 0;
+}
+.home-contact {
+  max-width: 800px;
+  width: 800px;
+}
+.home-contact h3 {
+  width: 465px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+.home-contact h3:nth-of-type(2) {
+  margin-bottom: 30px;
+}
+.home-contact h3 span {
+  color: #0ef;
+}
+.home-contact h1 {
+  font-size: 46px;
+  font-weight: 700;
+  margin: 3px 0;
+  color: #fff;
+}
+
+.home-contact p {
+  font-size: 19px;
+  padding: 1px;
+  color: #fff;
+}
+.div-img {
+  width: 500px;
+  height: 330px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 380px;
+
+  background-color: #fff;
+  box-shadow: 0 0 60px 30px #d4d4d4,
+    /* inner white */ 0 0 100px 60px rgb(137, 237, 255),
+    /* middle magenta */ 0 0 140px 90px #0ff; /* outer cyan */
+}
+/* .img {
+} */
+.home-sci a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border-radius: 50%;
+  border: 2px #0ef solid;
+  font-size: 20px;
+  color: #0ef;
+  margin: 30px 15px 30px 0;
+  text-decoration: none;
+}
+.home-sci a:hover {
+  background: #0ef;
+  color: #081c29;
+  box-shadow: 0 0 20px #0ef;
+}
+.btn-box {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #0ef;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #081c29;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.btn-box:hover {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
+}
+
+@keyframes slideright {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
